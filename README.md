@@ -34,7 +34,6 @@ If you dont like the direction firefox's development is heading to, but still wa
 
 * [Mozilla's Manifesto](https://www.mozilla.org/en-US/about/manifesto/)
 
-____
 
 <br>
 
@@ -50,9 +49,6 @@ ____
    * [Recommended videos & tools](#recommended-videos--tools)
    * [Configuration settings](#configuration-settings) 	
 
-
-
-____
 
 <br>
 
@@ -78,7 +74,6 @@ Feel free to watch these videos by Techlore and The Hated One incase you are new
 * [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) / [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) *( filter out urls with tracking elements )*
 * [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) *( manager user agents )*
 
-____
 
 <br>
 
@@ -100,6 +95,7 @@ This is a large section use the index below to navigate to parts that you need
 
 * [Cookies and history](#cookies-and-history)
 
+<br>
 
 #### Cookies and history
 
@@ -144,6 +140,7 @@ places.history.enabled = false
 browser.formfill.enable = false
 ```
 
+____
 
 * Delete everything in history 
 

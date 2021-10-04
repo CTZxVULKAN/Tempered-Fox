@@ -38,7 +38,7 @@ If you dont like the direction firefox's development is heading to, but still wa
 ### Index
 
 * [Hardening with extensions *( basic )*](#hardening-with-extensions--basic-)
-* [Hardening with config settings *( advanced )*]
+* [Hardening with config settings *( advanced )*](#hardening-with-config-settings--advanced-)
 
 ____
 

@@ -37,14 +37,14 @@ If you dont like the direction firefox's development is heading to, but still wa
 
 ### Index
 
-* [Hardening with extensions *( basic )*](https://github.com/CTZxVULKAN/Tempered-Fox/blob/main/README.md#extensions)
+* [Hardening with extensions *( basic )*]()
 * Hardening with `about:config` settings *( advanced )*
 
 ____
 
 <br>
 
-## Extensions
+## Hardening with extensions *( basic )*
 
 ### Recommened Extensions 
 

@@ -157,6 +157,6 @@ ____
 <br>
 
 ### Credits
-This configuration wasnt been completely made by me, and a lot of stuff has been added from the following projects :
+This project wasn't been completely made by me, and a lot of stuff has been added from the following projects :
 
 * [LibreWolf](https://librewolf-community.gitlab.io/)

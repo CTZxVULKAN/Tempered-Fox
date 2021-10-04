@@ -46,9 +46,11 @@ ____
 
 ## Extensions
 
-* [Ublock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-* [LocalCDN](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/)
-* [Cookie Auto Delete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/)
-* [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/) / [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
-* [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) / [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/)
-* [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/)
+### Recommened Extensions 
+
+* [Ublock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) *( script / tracker blocker, suppliments as an adblocker )*
+* [LocalCDN](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/) *( decentralized content delevery, decentraleyes' successor )*
+* [Cookie Auto Delete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/) *( cookie manager )*
+* [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/) / [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/) *( blocks invisible trackers )*
+* [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) / [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) *( filter urls with tracking elements )*
+* [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) *( manager user agents )*

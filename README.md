@@ -50,6 +50,7 @@ ____
 
 
    * [Recommended videos & tools](#recommended-videos--tools)
+   * [Configuration settings](#configuration-settings)
 
 
 ____

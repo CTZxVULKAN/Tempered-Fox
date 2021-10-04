@@ -73,3 +73,9 @@ ____
 <br>
 
 ## Hardening with config settings *( advanced )*
+
+### Recommended videos & tools
+
+For beginners firefox's `about:config` can be really tricky and intimidating. Feel free to watch the video below to get the basic gist of how its done. If you are still uncomfortable and not ready then check out Firefox Profilemaker. 
+* [Mental Outlaw](https://piped.kavin.rocks/watch?v=xxWXLlfqNAo)
+* [Firefox profilemaker](https://ffprofile.com/)

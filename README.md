@@ -96,3 +96,54 @@ For beginners Firefox's `about:config` can be really tricky and intimidating. Fe
 ### Configuration settings
 
 The following section consists of various configuration settings inorder to harden firefox. Please take the time to read and understand, but also to customize the settings to find your own setup.
+
+#### Cookies and history
+
+* Enable strict mode 
+
+```
+network.cookie.cookieBehavior = 5
+```
+> This will enable firefox's scrict mode which *automatically blocks* social media trackers, cross-site tracking cookies and all tracking content in both private and normal windows
+
+* Delete cookies on exit
+
+```
+network.cookie.lifetimePolicy = 2
+```
+> This will *delete all cookies* after the browser is quit, except user defined exceptions.
+
+* Make third party and http cookies session-only
+
+``` 
+network.cookie.thirdparty.sessionOnly= true
+network.cookie.thirdparty.nonsecureSessionOnly= true
+```
+> Enable third party or http cookies to be restricted to their specific session only.
+
+
+* Increase time between session saves
+
+```
+browser.sessionstore.privacy_level = 2
+browser.sessionstore.interval = 60000
+```
+> This prevents websites from storing session data like cookies and forms
+
+
+* Disable browsing, search and form history
+
+```
+places.history.enabled = false
+browser.formfill.enable = false
+```
+
+
+* Delete everything in history 
+
+```
+privacy.clearOnShutdown.cookies = false
+privacy.clearOnShutdown.offlineApps = false
+privacy.sanitize.sanitizeOnShutdown = true
+```
+> Force firefox to *delete everything* from history, but ignore data needed to stay logged into websites and user defined exceptions.

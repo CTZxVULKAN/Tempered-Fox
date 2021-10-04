@@ -65,5 +65,8 @@ Feel free to watch these videos incase you are new to firefox or this is the fir
 > Note : These videos are great but dated and may contain depriciated extensions or settings, the purpose of mentioning these videos is to make you fimiliar with how to configure settings in firefox.
 > Do your own research and customize the settings upto your own needs. 
 
+____
+
+<br>
 
 ## Hardening with config settings *( advanced )*

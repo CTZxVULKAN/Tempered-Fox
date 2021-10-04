@@ -34,9 +34,21 @@ If you dont like the direction firefox's development is heading to, but still wa
 
 * [Mozilla's Manifesto](https://www.mozilla.org/en-US/about/manifesto/)
 
-____
 
 ### Index
 
 * Hardening with extensions *( basic )*
 * Hardening with `about:config` settings *( advanced )*
+
+____
+
+<br>
+
+## Extensions
+
+* [Ublock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+* [LocalCDN](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/)
+* [Cookie Auto Delete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/)
+* [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/) / [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
+* [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) / [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/)
+* [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/)

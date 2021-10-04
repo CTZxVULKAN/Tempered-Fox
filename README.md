@@ -142,7 +142,7 @@ places.history.enabled = false
 browser.formfill.enable = false
 ```
 
-* Delete everything in history 
+* Delete everything in history on exit
 
 ```
 privacy.clearOnShutdown.cookies = false

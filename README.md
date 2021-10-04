@@ -47,7 +47,9 @@ If you dont like the direction firefox's development is heading to, but still wa
 * [Hardening with config settings *( advanced )*](#hardening-with-config-settings--advanced-)
 
    * [Recommended videos & tools](#recommended-videos--tools)
-   * [Configuration settings](#configuration-settings) 	
+   * [Configuration settings](#configuration-settings) 
+
+* [Credits](#credits)
 
 
 <br>
@@ -151,3 +153,6 @@ privacy.sanitize.sanitizeOnShutdown = true
 
 ____
 
+
+<br>
+## Credits

@@ -41,7 +41,16 @@ ____
 ### Index
 
 * [Hardening with extensions *( basic )*](#hardening-with-extensions--basic-)
+
+   * [Recommended videos]
+   * [Recommended extensions]
+
+
 * [Hardening with config settings *( advanced )*](#hardening-with-config-settings--advanced-)
+
+
+   * [Recommended videos & tools]
+
 
 ____
 
@@ -49,7 +58,7 @@ ____
 
 ## Hardening with extensions *( basic )*
 
-### Recommended videos on hardeneding firefox
+### Recommended videos
 
 Feel free to watch these videos by Techlore and The Hated One incase you are new to firefox or this is the first time you are playing with the settings in Firefox.
 

@@ -42,14 +42,14 @@ ____
 
 * [Hardening with extensions *( basic )*](#hardening-with-extensions--basic-)
 
-   * [Recommended videos]
-   * [Recommended extensions]
+   * [Recommended videos](#recommended-videos)
+   * [Recommended extensions](#recommended-extensions)
 
 
 * [Hardening with config settings *( advanced )*](#hardening-with-config-settings--advanced-)
 
 
-   * [Recommended videos & tools]
+   * [Recommended videos & tools](#recommended-videos--tools)
 
 
 ____

@@ -43,7 +43,7 @@ ____
 * [Hardening with extensions *( basic )*](#hardening-with-extensions--basic-)
 
    * [Recommended videos](#recommended-videos)
-   * [Recommended extensions](#recommended-extensions)
+   * [Recommended extensions](#recommened-extensions)
 
 
 * [Hardening with config settings *( advanced )*](#hardening-with-config-settings--advanced-)

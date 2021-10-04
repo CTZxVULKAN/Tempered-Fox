@@ -34,6 +34,9 @@ If you dont like the direction firefox's development is heading to, but still wa
 
 * [Mozilla's Manifesto](https://www.mozilla.org/en-US/about/manifesto/)
 
+____
+
+<br>
 
 ### Index
 

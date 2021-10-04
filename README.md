@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">Tempered Fox</h1>
-<p align="center"> A firefox hardening guide </p>
+<p align="center"> A comprehesive guide to hardening firefox. </p>
 
 
 <div align="center">

@@ -38,7 +38,7 @@ If you dont like the direction firefox's development is heading to, but still wa
 ### Index
 
 * [Hardening with extensions *( basic )*](#hardening-with-extensions--basic-)
-* Hardening with `about:config` settings *( advanced )*
+* [Hardening with config settings *( advanced )*]
 
 ____
 
@@ -64,3 +64,6 @@ Feel free to watch these videos incase you are new to firefox or this is the fir
 
 > Note : These videos are great but dated and may contain depriciated extensions or settings, the purpose of mentioning these videos is to make you fimiliar with how to configure settings in firefox.
 > Do your own research and customize the settings upto your own needs. 
+
+
+## Hardening with config settings *( advanced )*

@@ -140,8 +140,6 @@ places.history.enabled = false
 browser.formfill.enable = false
 ```
 
-____
-
 * Delete everything in history 
 
 ```
@@ -150,3 +148,6 @@ privacy.clearOnShutdown.offlineApps = false
 privacy.sanitize.sanitizeOnShutdown = true
 ```
 > Force firefox to delete everything from history, but ignore data needed to stay logged into websites and user defined exceptions.
+
+____
+

@@ -49,6 +49,16 @@ ____
 
 ## Hardening with extensions *( basic )*
 
+### Recommended videos on hardeneding firefox
+
+Feel free to watch these videos by Techlore and The Hated One incase you are new to firefox or this is the first time you are playing with the settings in Firefox.
+
+* [Techlore](https://piped.kavin.rocks/watch?v=NXsC1j7wIQE)
+* [The Hated One](https://piped.kavin.rocks/watch?v=xxWXLlfqNAo)
+
+> Note : These videos are great but dated and may contain depriciated extensions or settings, the purpose of mentioning these videos is to make you fimiliar with how to configure settings in firefox.
+> Do your own research and customize the settings upto your own needs. 
+
 ### Recommened Extensions 
 
 * [Ublock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) *( script / tracker blocker, suppliments as an adblocker )*
@@ -58,16 +68,6 @@ ____
 * [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) / [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) *( filter out urls with tracking elements )*
 * [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) *( manager user agents )*
 
-### Recommended videos on hardeneding firefox
-
-Feel free to watch these videos incase you are new to firefox or this is the first time you are playing with the settings in firefox.
-
-* [Techlore](https://piped.kavin.rocks/watch?v=NXsC1j7wIQE)
-* [The Hated One](https://piped.kavin.rocks/watch?v=xxWXLlfqNAo)
-
-> Note : These videos are great but dated and may contain depriciated extensions or settings, the purpose of mentioning these videos is to make you fimiliar with how to configure settings in firefox.
-> Do your own research and customize the settings upto your own needs. 
-
 ____
 
 <br>
@@ -76,7 +76,7 @@ ____
 
 ### Recommended videos & tools
 
-For beginners firefox's `about:config` can be really tricky and intimidating. Feel free to watch the video below to get the basic gist of how its done. If you are still uncomfortable and dont feel confident yet then check out Firefox Profilemaker. 
+For beginners Firefox's `about:config` can be really tricky and intimidating. Feel free to watch Mental Outlaws' video below to get the basic gist of how its done. If you are still uncomfortable and dont feel confident yet then check out Firefox Profilemaker. 
 
 * [Mental Outlaw](https://piped.kavin.rocks/watch?v=xxWXLlfqNAo)
 * [Firefox Profilemaker](https://ffprofile.com/)

@@ -45,12 +45,11 @@ ____
    * [Recommended videos](#recommended-videos)
    * [Recommended extensions](#recommened-extensions)
 
-
 * [Hardening with config settings *( advanced )*](#hardening-with-config-settings--advanced-)
 
-
    * [Recommended videos & tools](#recommended-videos--tools)
-   * [Configuration settings](#configuration-settings)
+   * [Configuration settings](#configuration-settings) 	
+
 
 
 ____
@@ -97,6 +96,7 @@ For beginners Firefox's `about:config` can be really tricky and intimidating. Fe
 
 The following section consists of various configuration settings inorder to harden firefox. Please take the time to read and understand, but also to customize the settings to find your own setup.
 
+
 #### Cookies and history
 
 * Enable strict mode 
@@ -104,14 +104,16 @@ The following section consists of various configuration settings inorder to hard
 ```
 network.cookie.cookieBehavior = 5
 ```
-> This will enable firefox's scrict mode which *automatically blocks* social media trackers, cross-site tracking cookies and all tracking content in both private and normal windows
+> This will enable firefox's scrict mode which automatically blocks social media trackers, cross-site tracking cookies and all tracking content in both private and normal windows
+
 
 * Delete cookies on exit
 
 ```
 network.cookie.lifetimePolicy = 2
 ```
-> This will *delete all cookies* after the browser is quit, except user defined exceptions.
+> This will delete all cookies after the browser is quit, except user defined exceptions.
+
 
 * Make third party and http cookies session-only
 
@@ -146,4 +148,4 @@ privacy.clearOnShutdown.cookies = false
 privacy.clearOnShutdown.offlineApps = false
 privacy.sanitize.sanitizeOnShutdown = true
 ```
-> Force firefox to *delete everything* from history, but ignore data needed to stay logged into websites and user defined exceptions.
+> Force firefox to delete everything from history, but ignore data needed to stay logged into websites and user defined exceptions.

@@ -96,7 +96,7 @@ For beginners Firefox's `about:config` can be really tricky and intimidating. Fe
 
 The following section consists of various configuration settings inorder to harden firefox. Please take the time to read and understand, but also to customize the settings to find your own setup.
 
-This will be a large section here is a quick index for you to navigate to parts you need.
+This is a large section use the index below to navigate to parts that you need
 
 * [Cookies and history](#cookies-and-history)
 

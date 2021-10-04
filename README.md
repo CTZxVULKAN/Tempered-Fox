@@ -98,7 +98,7 @@ The following section consists of various configuration settings inorder to hard
 
 This will be a large section here is a quick index for you to navigate to parts you need.
 
-* [Cookies and history]()
+* [Cookies and history](#cookies-and-history)
 
 
 #### Cookies and history

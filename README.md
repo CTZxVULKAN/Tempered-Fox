@@ -52,5 +52,15 @@ ____
 * [LocalCDN](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/) *( decentralized content delevery, decentraleyes' successor )*
 * [Cookie Auto Delete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/) *( cookie manager )*
 * [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/) / [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/) *( blocks invisible trackers )*
-* [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) / [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) *( filter urls with tracking elements )*
+* [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) / [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) *( filter out urls with tracking elements )*
 * [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) *( manager user agents )*
+
+### Recommended videos on hardeneding firefox
+
+Feel free to watch these videos incase you are new to firefox or this is the first time you are playing with the settings in firefox.
+
+* [Techlore](https://piped.kavin.rocks/watch?v=NXsC1j7wIQE)
+* [The Hated One](https://piped.kavin.rocks/watch?v=xxWXLlfqNAo)
+
+> Note : These videos are great but dated and may contain depriciated extensions or settings, the purpose of mentioning these videos is to make you fimiliar with how to configure settings in firefox.
+> Do your own research and customize the settings upto your own needs. 

@@ -68,6 +68,7 @@ Feel free to watch these videos by Techlore and The Hated One incase you are new
 > Note : These videos are great but dated and may contain depriciated extensions or settings, the purpose of mentioning these videos is to make you fimiliar with how to configure settings in firefox.
 > Do your own research and customize the settings upto your own needs. 
 
+
 ### Recommened Extensions 
 
 * [Ublock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) *( script / tracker blocker, suppliments as an adblocker )*
@@ -89,3 +90,8 @@ For beginners Firefox's `about:config` can be really tricky and intimidating. Fe
 
 * [Mental Outlaw](https://piped.kavin.rocks/watch?v=xxWXLlfqNAo)
 * [Firefox Profilemaker](https://ffprofile.com/)
+
+
+### Configuration settings
+
+The following section consists of various configuration settings inorder to harden firefox. Please take the time to read and understand, but also to customize the settings to find your own setup.

@@ -21,9 +21,18 @@ defaultPref("places.history.enabled", false);
 defaultPref("browser.formfill.enable", false);
 
 // Delete everything in history on exit, except saved login info, site settings and user defined exceptions.
-defaultPref("privacy.clearOnShutdown.cookies", false);
-defaultPref("privacy.clearOnShutdown.siteSettings", false);
+defaultPref("privacy.clearOnShutdown.cache", true);
+defaultPref("privacy.clearOnShutdown.cookies", true);
+defaultPref("privacy.clearOnShutdown.downloads", true);
+defaultPref("privacy.clearOnShutdown.formdata", true);
+defaultPref("privacy.clearOnShutdown.history", true);
 defaultPref("privacy.clearOnShutdown.offlineApps", true);
+
+defaultPref("privacy.clearOnShutdown.passwords", false);
+defaultPref("privacy.clearOnShutdown.sessions", false);
+defaultPref("privacy.clearOnShutdown.openWindows", false);
+defaultPref("privacy.clearOnShutdown.siteSettings", false);
+
 defaultPref("privacy.sanitize.sanitizeOnShutdown", true);
 
 

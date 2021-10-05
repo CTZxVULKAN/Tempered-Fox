@@ -158,6 +158,99 @@ ____
 #### Network
 
 
+* Force HTTPS over HTTP in all windows 
+
+```
+dom.security.https_only_mode = true
+```
+> Forcefully change connection from HTTP (insecure) to HTTPS (secure) in all normal and private browsing windows.
+
+
+* Disable cross-origin HTTP authentication
+
+```
+network.auth.subresource-http-auth-allow = 1
+```
+> Stops all cross-origin resources from making insecure HTTP authentications.
+
+
+* Block insecure passive content
+
+```
+security.mixed_content.block_display_content = true
+```
+> This blocks portions of insecure HTTP components in a fully HTTPS website making sure all data transferred from the browser to the server is encrypted.
+> To learn more about this visit [here](https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox#w_what-is-mixed-content-and-what-are-the-risks). 
+
+
+* Disable IPV6
+
+```
+network.dns.disableIPv6 = true
+```
+
+* Xorigin referer
+
+```
+network.http.referer.XOriginPolicy = 2
+network.http.referer.XOriginTrimmingPolicy
+```
+> This sends referer only when the hostnames fully match and trims referer to only send scheme, host and port for all cross-origin reffers.
+
+> Other notable options :  
+```
+network.http.referer.XOriginPolicy :
+
+0 = Send Referer in all cases
+1 = Send Referer to same eTLD sites
+2 = Send Referer only when the full hostnames match
+
+network.http.referer.XOriginTrimmingPolicy
+
+0 = Send full url in Referer
+1 = Send url without query string in Referer
+2 = Only send scheme, host, and port in Referer
+```
+
+
+* Use punycode
+
+```
+network.IDN_show_punycode = true 
+```
+> Enable punycode to prevent adress spoofing. To learn more about punycode visit [here](https://blogs.msmvps.com/brink/2018/02/21/how-to-enable-or-disable-idn-punycode-in-firefox-address-bar-in-windows/).
+
+
+* DNS query over proxy
+
+```
+network.proxy.socks_remote_dns = true
+network.gio.supported-protocols = true
+```
+> Forces DNS queries over proxies whenever available, also disables gio to prevent proxy bypass.
+
+
+* Skip undesired DNS connection test.
+
+```
+network.trr.confirmationNS = skip
+```
+
+* Disable prefetching of pages
+
+```
+network.dns.disablePrefetch = true disable dns prefetching
+network.predictor.enabled = false // disable predictor
+network.prefetch-next = false // disable link prefetching
+network.http.speculative-parallel-limit = 0 // disable prefetching on mouse over
+```
+> Firefox prefetches pages it thinks you might visit next for faster load times, however this will send small amounts of your information to websites you might not visit. Disabling this feature will result in a minimal dip in perfomance. 
+
+
+
+
+
+
 <br>
 
 ### Credits

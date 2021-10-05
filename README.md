@@ -159,7 +159,7 @@ privacy.clearOnShutdown.siteSettings = false
 
 privacy.sanitize.sanitizeOnShutdown = true
 ```
-> Force firefox to delete everything from history, but ignore data needed to stay logged into websites and user defined exceptions.
+> Force firefox to delete everything from history, but ignore data needed to stay logged into websites, current session to restore session if quit accedentally and user defined exceptions.
 
 ____
 

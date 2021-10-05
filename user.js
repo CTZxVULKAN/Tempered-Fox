@@ -73,5 +73,3 @@ lockPref("network.predictor.enabled", false); // disable predictor
 lockPref("network.prefetch-next", false); // disable link prefetching
 lockPref("network.http.speculative-parallel-limit", 0); // disable prefetching on mouse over
 
-defaultPref("network.manage-offline-status", false); // let user control the offline behavior
-

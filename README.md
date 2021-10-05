@@ -239,10 +239,10 @@ network.trr.confirmationNS = skip
 * Disable prefetching of pages
 
 ```
-network.dns.disablePrefetch = true disable dns prefetching
-network.predictor.enabled = false // disable predictor
-network.prefetch-next = false // disable link prefetching
-network.http.speculative-parallel-limit = 0 // disable prefetching on mouse over
+network.dns.disablePrefetch = true 
+network.predictor.enabled = false 
+network.prefetch-next = false 
+network.http.speculative-parallel-limit = 0 
 ```
 > Firefox prefetches pages it thinks you might visit next for faster load times, however this will send small amounts of your information to websites you might not visit. Disabling this feature will result in a minimal dip in perfomance. 
 

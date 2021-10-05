@@ -256,7 +256,37 @@ network.http.speculative-parallel-limit = 0
 ```
 > Firefox prefetches pages it thinks you might visit next for faster load times, however this will send small amounts of your information to websites you might not visit. Disabling this feature will result in a minimal dip in perfomance. 
 
+* Disable pinging URIs specified in HTML
 
+```
+browser.send_pings = false
+browser.send_pings.require_same_host = true
+```
+
+* Optimise SSL
+
+```
+security.ssl.require_safe_negotiation = true
+```
+
+* Prevent network information leakage via javascript
+
+```
+dom.netinfo.enabled = false
+network.allow-experiments = false
+```
+* TLS
+
+```
+security.tls.version.min = 3
+security.ssl.enable_false_start = false
+```
+
+* Improve forward secrecy
+
+```
+security.tls.enable_0rtt_data = false
+```
 
 
 

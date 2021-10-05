@@ -288,8 +288,12 @@ security.ssl.enable_false_start = false
 security.tls.enable_0rtt_data = false
 ```
 
+* Disable firefox from detecting online/offline status
 
-
+```
+network.connectivity-service.enabled = false
+network.manage-offline-status = false
+```
 
 <br>
 

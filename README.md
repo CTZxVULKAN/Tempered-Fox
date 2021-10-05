@@ -302,9 +302,9 @@ network.manage-offline-status = false
 ### Credits
 This project wasn't been completely made by me, and a lot of stuff has been added from the following projects :
 
+* [Arkenfox](https://github.com/arkenfox)
 * [LibreWolf](https://librewolf-community.gitlab.io/)
-* [Pyllyukko's User.js ](https://github.com/pyllyukko/user.js)
-* [Arkenfox user.js](https://github.com/arkenfox)
+* [Pyllyukko's user.js ](https://github.com/pyllyukko/user.js)
 
 
 

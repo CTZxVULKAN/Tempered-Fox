@@ -67,9 +67,32 @@ defaultPref("network.gio.supported-protocols", ""); // disable gio as it could b
 // Skip undesired DNS connection test.
 defaultPref("network.trr.confirmationNS", "skip"); // skip undesired doh test connection
 
-// prefetching
+// Prefetching
 defaultPref("network.dns.disablePrefetch", true); // disable dns prefetching
 lockPref("network.predictor.enabled", false); // disable predictor
 lockPref("network.prefetch-next", false); // disable link prefetching
 lockPref("network.http.speculative-parallel-limit", 0); // disable prefetching on mouse over
+
+
+// Disable pinging URIs specified in HTML
+user_pref("browser.send_pings", false);
+user_pref("browser.send_pings.require_same_host",true);
+
+// Optimise SSL
+user_pref("security.ssl.require_safe_negotiation",true);
+
+// TLS
+user_pref("security.tls.version.min", 3);
+user_pref("security.ssl.enable_false_start",false);
+
+// Improve forward secrecy
+user_pref("security.tls.enable_0rtt_data" false);
+
+//Prevent network information leakage via javascript 
+user_pref("dom.netinfo.enabled",false);
+user_pref("network.allow-experiments",false);
+
+// Disable firefox from detecting online/offline status
+user_pref("network.connectivity-service.enabled" false);
+user_pref("network.manage-offline-status" false);
 

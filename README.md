@@ -96,6 +96,7 @@ The following section consists of various configuration settings inorder to hard
 This is a large section use the index below to navigate to parts that you need
 
 * [Cookies and history](#cookies-and-history)
+* [Network](#network)
 
 <br>
 
@@ -152,6 +153,9 @@ privacy.sanitize.sanitizeOnShutdown = true
 > Force firefox to delete everything from history, but ignore data needed to stay logged into websites and user defined exceptions.
 
 ____
+
+
+#### Network
 
 
 <br>

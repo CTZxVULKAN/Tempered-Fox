@@ -3,37 +3,37 @@
 // -------------------------------------------
 
 // Enable strict mode
-defaultPref("network.cookie.cookieBehavior", 5); // dFPI, same as strict mode
+user_pref("network.cookie.cookieBehavior", 5); // dFPI, same as strict mode
 
 // Delete cookies on exit
-defaultPref("network.cookie.lifetimePolicy", 2); // keep cookies until the browser is closed then delete everything minus exceptions
+user_pref("network.cookie.lifetimePolicy", 2); // keep cookies until the browser is closed then delete everything minus exceptions
 
 // Make third party and http cookies session-only
-defaultPref("network.cookie.thirdparty.sessionOnly", true);
-defaultPref("network.cookie.thirdparty.nonsecureSessionOnly", true);
+user_pref("network.cookie.thirdparty.sessionOnly", true);
+user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true);
 
 // Increase time between session saves
-defaultPref("browser.sessionstore.privacy_level", 2);
-defaultPref("browser.sessionstore.interval", 60000); // prevent websites from storing session data like cookies and forms by increasing time between session saves
+user_pref("browser.sessionstore.privacy_level", 2);
+user_pref("browser.sessionstore.interval", 60000); // prevent websites from storing session data like cookies and forms by increasing time between session saves
 
 // disable browsing, search and form history
-defaultPref("places.history.enabled", false);
-defaultPref("browser.formfill.enable", false);
+user_pref("places.history.enabled", false);
+user_pref("browser.formfill.enable", false);
 
 // Delete everything in history on exit, except saved login info, site settings and user defined exceptions.
-defaultPref("privacy.clearOnShutdown.cache", true);
-defaultPref("privacy.clearOnShutdown.cookies", true);
-defaultPref("privacy.clearOnShutdown.downloads", true);
-defaultPref("privacy.clearOnShutdown.formdata", true);
-defaultPref("privacy.clearOnShutdown.history", true);
-defaultPref("privacy.clearOnShutdown.offlineApps", true);
+user_pref("privacy.clearOnShutdown.cache", true);
+user_pref("privacy.clearOnShutdown.cookies", true);
+user_pref("privacy.clearOnShutdown.downloads", true);
+user_pref("privacy.clearOnShutdown.formdata", true);
+user_pref("privacy.clearOnShutdown.history", true);
+user_pref("privacy.clearOnShutdown.offlineApps", true);
 
-defaultPref("privacy.clearOnShutdown.passwords", true);
-defaultPref("privacy.clearOnShutdown.sessions", true);
-defaultPref("privacy.clearOnShutdown.openWindows", true);
-defaultPref("privacy.clearOnShutdown.siteSettings", false);
+user_pref("privacy.clearOnShutdown.passwords", false);
+user_pref("privacy.clearOnShutdown.sessions", false);
+user_pref("privacy.clearOnShutdown.openWindows", false);
+user_pref("privacy.clearOnShutdown.siteSettings", false);
 
-defaultPref("privacy.sanitize.sanitizeOnShutdown", true);
+user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 
 
 
@@ -42,36 +42,36 @@ defaultPref("privacy.sanitize.sanitizeOnShutdown", true);
 // -------------------------------------------
 
 // Force HTTPS over HTTP on  all windows
-defaultPref("dom.security.https_only_mode", true); // only allow https in all windows, including private browsing
+user_pref("dom.security.https_only_mode", true); // only allow https in all windows, including private browsing
 
 // Disable cross-origin HTTP authentication
-defaultPref("network.auth.subresource-http-auth-allow", 1); 
+user_pref("network.auth.subresource-http-auth-allow", 1); 
 
 // Block insecure passive content
-defaultPref("security.mixed_content.block_display_content", true); 
+user_pref("security.mixed_content.block_display_content", true); 
 
 // Disable ipv6
-defaultPref("network.dns.disableIPv6", true); 
+user_pref("network.dns.disableIPv6", true); 
 
 // XOrigin referer
-defaultPref("network.http.referer.XOriginPolicy", 2); // Send Referer only when the full hostnames match
-defaultPref("network.http.referer.XOriginTrimmingPolicy", 2); // trim referer to only send scheme, host and port
+user_pref("network.http.referer.XOriginPolicy", 2); // Send Referer only when the full hostnames match
+user_pref("network.http.referer.XOriginTrimmingPolicy", 2); // trim referer to only send scheme, host and port
 
 // Use punycode
-defaultPref("network.IDN_show_punycode", true); // use punycode in idn to prevent spoofing
+user_pref("network.IDN_show_punycode", true); // use punycode in idn to prevent spoofing
 
 // Proxy over DNS queries
-defaultPref("network.proxy.socks_remote_dns", true); // forces dns query through the proxy when using one
-defaultPref("network.gio.supported-protocols", ""); // disable gio as it could bypass proxy
+user_pref("network.proxy.socks_remote_dns", true); // forces dns query through the proxy when using one
+user_pref("network.gio.supported-protocols", ""); // disable gio as it could bypass proxy
 
 // Skip undesired DNS connection test.
-defaultPref("network.trr.confirmationNS", "skip"); // skip undesired doh test connection
+user_pref("network.trr.confirmationNS", "skip"); // skip undesired doh test connection
 
 // Prefetching
-defaultPref("network.dns.disablePrefetch", true); // disable dns prefetching
-lockPref("network.predictor.enabled", false); // disable predictor
-lockPref("network.prefetch-next", false); // disable link prefetching
-lockPref("network.http.speculative-parallel-limit", 0); // disable prefetching on mouse over
+user_pref("network.dns.disablePrefetch", true); // disable dns prefetching
+user_pref("network.predictor.enabled", false); // disable predictor
+user_pref("network.prefetch-next", false); // disable link prefetching
+user_pref("network.http.speculative-parallel-limit", 0); // disable prefetching on mouse over
 
 
 // Disable pinging URIs specified in HTML

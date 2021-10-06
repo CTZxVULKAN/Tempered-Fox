@@ -96,7 +96,7 @@ The following section consists of various configuration settings inorder to hard
 
 This is a large section use the index below to navigate to parts that you need
 
-* [Cookies and history](#cookies-and-history)
+* [Cookies and History](#cookies-and-history)
 * [Network](#network)
 * [Dom](#dom)
 
@@ -302,7 +302,7 @@ network.manage-offline-status = false
 ____
 
 
-#### DOM
+#### DOM and APIs
 
 
 

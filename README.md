@@ -98,6 +98,7 @@ This is a large section use the index below to navigate to parts that you need
 
 * [Cookies and history](#cookies-and-history)
 * [Network](#network)
+* [Dom](#dom)
 
 <br>
 

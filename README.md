@@ -75,7 +75,7 @@ Feel free to watch these videos by Techlore and The Hated One incase you are new
 * [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/) / [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/) *( blocks invisible trackers )*
 * [Javascript Restrictor](https://addons.mozilla.org/cs/firefox/addon/javascript-restrictor/) *( limit webapi cababilities)*
 * [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) / [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) *( filter out urls with tracking elements )*
-* [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) *( manager user agents )*
+* [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/) *( manage user agents )*
 
 
 <br>

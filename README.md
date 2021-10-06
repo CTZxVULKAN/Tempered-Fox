@@ -154,14 +154,14 @@ privacy.clearOnShutdown.downloads = true
 privacy.clearOnShutdown.formdata = true
 privacy.clearOnShutdown.history = true
 privacy.clearOnShutdown.offlineApps = true
-privacy.clearOnShutdown.passwords = false
-privacy.clearOnShutdown.sessions = false
-privacy.clearOnShutdown.openWindows = false
+privacy.clearOnShutdown.passwords = true
+privacy.clearOnShutdown.sessions = true
+privacy.clearOnShutdown.openWindows = true
 privacy.clearOnShutdown.siteSettings = false 
 
 privacy.sanitize.sanitizeOnShutdown = true
 ```
-> Force firefox to delete everything from history, but ignore data needed to stay logged into websites, current session to restore session if quit accedentally and user defined exceptions.
+> Force firefox to delete everything from history on history, except site settings (eg - wether to allow site to have acess to persistant storage or canvas data) and user defined exceptions.
 
 ____
 

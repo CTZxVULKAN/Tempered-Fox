@@ -28,9 +28,9 @@ defaultPref("privacy.clearOnShutdown.formdata", true);
 defaultPref("privacy.clearOnShutdown.history", true);
 defaultPref("privacy.clearOnShutdown.offlineApps", true);
 
-defaultPref("privacy.clearOnShutdown.passwords", false);
-defaultPref("privacy.clearOnShutdown.sessions", false);
-defaultPref("privacy.clearOnShutdown.openWindows", false);
+defaultPref("privacy.clearOnShutdown.passwords", true);
+defaultPref("privacy.clearOnShutdown.sessions", true);
+defaultPref("privacy.clearOnShutdown.openWindows", true);
 defaultPref("privacy.clearOnShutdown.siteSettings", false);
 
 defaultPref("privacy.sanitize.sanitizeOnShutdown", true);

@@ -380,7 +380,7 @@ geo.provider.ms-windows-location = false [windows]
 ```
 dom.mozTCPSocket.enabled = false
 ```
-> mozTCPSocket may leak client memory or private data to the server.
+> mozTCPSocket may leak client memory or private data to the server. To learn more reffer [here](https://www.mozilla.org/en-US/security/advisories/mfsa2015-97/).
 
 
 * Disable telephony API

@@ -148,6 +148,9 @@ user_pref("device.sensors.enabled",	false);
 // Disable gamepad API
 user_pref("dom.gamepad.enabled", false);
 
+// Prevent font emmuration
+// user_pref("browser.display.use_document_fonts", 0);
+
 // Disable VR APIs
 user_pref("dom.vr.enabled", false);
 

@@ -305,6 +305,113 @@ ____
 #### DOM and APIs
 
 
+* Disable service workers
+
+```
+dom.serviceWorkers.enabled = false
+```
+> Service workers are seperate js files which are independent of the main browsers's proscess and run in a different thread. They are used for intercepting network requests, caching or retrieving resources from the cache, and delivering push notification messages. If you do not want anything to run outside your main browser proscess you can disable them , however this will break certain sites.
+
+
+* Disable web-notifications
+```
+dom.webnotifications.enabled = false
+```
+
+
+* Prevent sripts from interacting with open windows.
+```
+dom.disable_window_move_resize = true
+```
+> Scripts can be used to resize your open window or change its position. This can be used to fingerprint you.
+
+
+* Disable DOM timing & performance APIs
+
+```
+dom.enable_performance = false
+dom.enable_user_timing = false
+dom.enable_resource_timing = false
+```
+> These APIs can be used to fingerprint your hardware/network based on load times & peformance. 
+
+* Disable network API
+
+```
+dom.network.enabled = false
+```
+> If enabled may leak network info.
+
+* Disable battery API
+```
+dom.battery.enabled = false
+```
+> Why does a webpage need to know your battery percentage ??
+
+* Disable webaudio API
+
+```
+dom.webaudio.enabled = false
+```
+> This may break browser based games.
+
+* Disable geolocation
+
+```
+geo.enabled = false 
+geo.wifi.logging.enabled = false
+geo.wifi.uri = "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%"
+geo.provider.use_gpsd  = false [linux]
+geo.provider.use_corelocation = false [mac]
+geo.provider.ms-windows-location = false [windows]
+```
+> This will disable geolocation and if enabled will prevent logging and use Mozilla's geolocation services instead of Google.
+
+* Disable raw TCP socket support 
+
+```
+dom.mozTCPSocket.enabled = false
+```
+> mozTCPSocket may leak client memory or private data to the server.
+
+
+* Disable telephony API
+
+```
+dom.telephony.enabled = false
+```
+> Windows API that allows the browser to use telephone services like make and receive phone calls.
+
+
+*  Disable sensor API
+```
+device.sensors.enabled = false
+```
+
+
+* Disable gamepad API
+```
+dom.gamepad.enabled = false
+```
+> Enabling may cause USB device enumeration
+
+* Disable VR APIs
+```
+dom.vr.enabled = false
+```
+
+*  Disable vibrator API
+
+```
+dom.vibrator.enabled = false
+```
+
+* Disable Webassembly
+
+```
+javascript.options.wasm = false
+```
+> This may break sites using webassembly like Figma and browser based games.
 
 <br>
 

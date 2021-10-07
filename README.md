@@ -313,6 +313,14 @@ dom.serviceWorkers.enabled = false
 > Service workers are seperate js files which are independent of the main browsers's proscess and run in a different thread. They are used for intercepting network requests, caching or retrieving resources from the cache, and delivering push notification messages. If you do not want anything to run outside your main browser proscess you can disable them , however this will break certain sites.
 
 
+* Disable webassembly
+
+```
+javascript.options.wasm = false
+```
+> This may break sites using webassembly like Figma and browser based games.
+
+
 * Disable web-notifications
 ```
 dom.webnotifications.enabled = false
@@ -406,12 +414,7 @@ dom.vr.enabled = false
 dom.vibrator.enabled = false
 ```
 
-* Disable Webassembly
 
-```
-javascript.options.wasm = false
-```
-> This may break sites using webassembly like Figma and browser based games.
 
 <br>
 

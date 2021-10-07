@@ -410,6 +410,8 @@ browser.display.use_document_fonts = 0
 ```
 > This will prevent websites from using system fonts and resolve to ugly default fonts.
 
+> NOTE: This can limit most (but not all) JS font enumeration which is a high entropy fingerprinting vector.
+
 
 * Disable VR APIs
 ```

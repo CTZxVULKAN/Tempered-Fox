@@ -88,11 +88,69 @@ user_pref("security.ssl.enable_false_start",false);
 // Improve forward secrecy
 user_pref("security.tls.enable_0rtt_data" false);
 
-//Prevent network information leakage via javascript 
+// Prevent network information leakage via javascript 
 user_pref("dom.netinfo.enabled",false);
 user_pref("network.allow-experiments",false);
 
 // Disable firefox from detecting online/offline status
 user_pref("network.connectivity-service.enabled" false);
 user_pref("network.manage-offline-status" false);
+
+
+
+// -------------------------------------------
+//  SECTION : DOM & APIs
+// -------------------------------------------
+
+// Disable service workers
+user_pref("dom.serviceWorkers.enabled", false); 
+
+// Disable webassembly
+user_pref("javascript.options.wasm", false);
+
+// Disable web-notifications
+user_pref("dom.webnotifications.enabled",	false);
+
+// Prevent sripts from interacting with open windows.
+user_pref("dom.disable_window_move_resize", true);
+
+// Disable DOM timing & performance APIs
+user_pref("dom.enable_performance",	false);
+user_pref("dom.enable_user_timing",	false);
+user_pref("dom.enable_resource_timing", false)
+
+// Disable Network API
+user_pref("dom.network.enabled", false)
+
+// Disable battery API
+user_pref("dom.battery.enabled", false);
+
+//  Disable webaudio API
+user_pref("dom.webaudio.enabled",	false);
+
+//  Disable geolocation
+user_pref("geo.enabled",					false);
+user_pref("geo.wifi.uri", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
+user_pref("geo.wifi.logging.enabled", false);
+user_pref("geo.provider.use_gpsd", false);
+user_pref("geo.provider.use_corelocation", false);
+user_pref("geo.provider.ms-windows-location", false);
+
+// Disable raw TCP socket support
+user_pref("dom.mozTCPSocket.enabled",	false);
+
+// Disable telephony API
+user_pref("dom.telephony.enabled", false);
+
+// Disable sensor API
+user_pref("device.sensors.enabled",	false);
+
+// Disable gamepad API
+user_pref("dom.gamepad.enabled", false);
+
+// Disable VR APIs
+user_pref("dom.vr.enabled", false);
+
+// Disable vibrator API
+user_pref("dom.vibrator.enabled", false);
 

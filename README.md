@@ -401,7 +401,15 @@ device.sensors.enabled = false
 ```
 dom.gamepad.enabled = false
 ```
-> Enabling may cause USB device enumeration
+> Enabling may cause USB device enumeration.
+
+* Prevent font emmuration
+
+```
+browser.display.use_document_fonts = 0
+```
+> This will prevent websites from using system fonts and resolve to ugly default fonts.
+
 
 * Disable VR APIs
 ```
@@ -413,8 +421,6 @@ dom.vr.enabled = false
 ```
 dom.vibrator.enabled = false
 ```
-
-
 
 <br>
 

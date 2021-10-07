@@ -3,10 +3,10 @@
 // -------------------------------------------
 
 // Enable strict mode
-user_pref("network.cookie.cookieBehavior", 5); // dFPI, same as strict mode
+user_pref("network.cookie.cookieBehavior", 5);
 
 // Delete cookies on exit
-user_pref("network.cookie.lifetimePolicy", 2); // keep cookies until the browser is closed then delete everything minus exceptions
+user_pref("network.cookie.lifetimePolicy", 2); 
 
 // Make third party and http cookies session-only
 user_pref("network.cookie.thirdparty.sessionOnly", true);
@@ -14,7 +14,7 @@ user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true);
 
 // Increase time between session saves
 user_pref("browser.sessionstore.privacy_level", 2);
-user_pref("browser.sessionstore.interval", 60000); // prevent websites from storing session data like cookies and forms by increasing time between session saves
+user_pref("browser.sessionstore.interval", 60000); 
 
 // disable browsing, search and form history
 user_pref("places.history.enabled", false);
@@ -42,7 +42,7 @@ user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 // -------------------------------------------
 
 // Force HTTPS over HTTP on  all windows
-user_pref("dom.security.https_only_mode", true); // only allow https in all windows, including private browsing
+user_pref("dom.security.https_only_mode", true); 
 
 // Disable cross-origin HTTP authentication
 user_pref("network.auth.subresource-http-auth-allow", 1); 
@@ -54,24 +54,24 @@ user_pref("security.mixed_content.block_display_content", true);
 user_pref("network.dns.disableIPv6", true); 
 
 // XOrigin referer
-user_pref("network.http.referer.XOriginPolicy", 2); // Send Referer only when the full hostnames match
-user_pref("network.http.referer.XOriginTrimmingPolicy", 2); // trim referer to only send scheme, host and port
+user_pref("network.http.referer.XOriginPolicy", 2); 
+user_pref("network.http.referer.XOriginTrimmingPolicy", 2); 
 
 // Use punycode
-user_pref("network.IDN_show_punycode", true); // use punycode in idn to prevent spoofing
+user_pref("network.IDN_show_punycode", true); 
 
 // Proxy over DNS queries
-user_pref("network.proxy.socks_remote_dns", true); // forces dns query through the proxy when using one
-user_pref("network.gio.supported-protocols", ""); // disable gio as it could bypass proxy
+user_pref("network.proxy.socks_remote_dns", true); 
+user_pref("network.gio.supported-protocols", ""); 
 
 // Skip undesired DNS connection test.
-user_pref("network.trr.confirmationNS", "skip"); // skip undesired doh test connection
+user_pref("network.trr.confirmationNS", "skip"); 
 
 // Prefetching
-user_pref("network.dns.disablePrefetch", true); // disable dns prefetching
-user_pref("network.predictor.enabled", false); // disable predictor
-user_pref("network.prefetch-next", false); // disable link prefetching
-user_pref("network.http.speculative-parallel-limit", 0); // disable prefetching on mouse over
+user_pref("network.dns.disablePrefetch", true); 
+user_pref("network.predictor.enabled", false); 
+user_pref("network.prefetch-next", false);
+user_pref("network.http.speculative-parallel-limit", 0); 
 
 
 // Disable pinging URIs specified in HTML

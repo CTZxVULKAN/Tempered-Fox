@@ -423,6 +423,7 @@ dom.vr.enabled = false
 ```
 dom.vibrator.enabled = false
 ```
+____
 
 <br>
 

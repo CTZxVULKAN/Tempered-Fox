@@ -35,6 +35,7 @@ user_pref("privacy.clearOnShutdown.siteSettings", false);
 
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 
+user_pref("privacy.sanitize.timeSpan",				0);  // Set time range to "Everything" as default in "Clear Recent History"
 
 
 // -------------------------------------------
@@ -156,4 +157,25 @@ user_pref("dom.vr.enabled", false);
 
 // Disable vibrator API
 user_pref("dom.vibrator.enabled", false);
+
+
+
+// -------------------------------------
+//  SECTION : CACHE AND TEMPORARY FILES
+// -------------------------------------
+
+
+user_pref("browser.cache.disk.enable", false);     // disable disk cache
+user_pref("browser.cache.disk_cache_ssl", false);  // disable Caching of SSL Pages
+user_pref("browser.cache.memory.enable", false);   // disable memory cache
+user_pref("browser.cache.offline.enable", false);  // do not download URLs for the offline cache
+user_pref("browser.cache.insecure.enable", false); // do not cache insecure sites
+
+user_pref("browser.privatebrowsing.forceMediaMemoryCache", true); // block media cache from writing to disk in private browsing mode
+user_pref("media.memory_cache_max_size", 65536); // increase max cache size to avoid playback issues caused by above setting
+
+user_pref("browser.shell.shortcutFavicons", false); // disable shortcut favicons from being stored in profile
+user_pref("browser.helperApps.deleteTempFileOnExit", true); // delete temporary files opened with external apps
+user_pref("browser.pagethumbnails.capturing_disabled", true); // disable page thumbnails capturing
+
 

@@ -225,3 +225,32 @@ user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-manager.url",	""); // disable auto download of OpenH264 codec
 
 user_pref("media.gmp-widevinecdm.enabled", false); // prevent auto download of google's content decryption module.
+
+
+
+// -----------------------------
+//    SECTION : FINGERPRINTING
+// -----------------------------
+
+user_pref("privacy.resistFingerprinting", true); // allow firefox to take measures to resist fingerprinting
+
+// rfp compatibility settings
+user_pref("privacy.resistFingerprinting.block_mozAddonManager", true); // prevents rfp from breaking AMO
+user_pref("browser.startup.blankWindow", false); // if set to true it breaks RFP windows resizing
+user_pref("browser.display.use_system_colors", false); // default but enforced due to RFP
+
+user_pref("privacy.resistFingerprinting.letterboxing", true); // allow letterboxing (prevents disclosing actual screensize)
+
+user_pref("media.video_stats.enabled", false); // disable media stats to prevent fingerprinting
+
+// dont reveal build id
+user_pref("general.buildID.override",				"20100101");
+user_pref("browser.startup.homepage_override.buildID",		"20100101");
+
+// Disable webgl
+user_pref("webgl.disabled",	true);
+
+user_pref("webgl.min_capability_mode", true); // When webGL is enabled, use the minimum capability mode
+user_pref("webgl.disable-extensions",	true); // When webGL is enabled, disable webGL extensions
+user_pref("webgl.disable-fail-if-major-performance-caveat",	true); //  When webGL is enabled, force enabling it even when layer acceleration is not supported
+user_pref("webgl.enable-debug-renderer-info",	false); // When webGL is enabled, do not expose information about the graphics driver

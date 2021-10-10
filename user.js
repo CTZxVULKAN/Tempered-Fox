@@ -374,3 +374,42 @@ user_pref("browser.download.autohideButton", false); // hide download button aut
 user_pref("browser.download.manager.addToRecentDocs", false); // do not add downloads to recents
 user_pref("browser.tabs.loadBookmarksInTabs", true); // always open bookmarks in new tab
 
+// remove default handlers and translation engine
+user_pref("gecko.handlerService.schemes.mailto.0.uriTemplate", "");
+user_pref("gecko.handlerService.schemes.mailto.0.name", "");
+user_pref("gecko.handlerService.schemes.mailto.1.uriTemplate", "");
+user_pref("gecko.handlerService.schemes.mailto.1.name", "");
+user_pref("gecko.handlerService.schemes.irc.0.uriTemplate", "");
+user_pref("gecko.handlerService.schemes.irc.0.name", "");
+user_pref("gecko.handlerService.schemes.ircs.0.uriTemplate", "");
+user_pref("gecko.handlerService.schemes.ircs.0.name", "");
+user_pref("browser.translation.engine", "");
+
+// disable welcome, what's new pages and ui tour
+user_pref("browser.startup.homepage_override.mstone", "ignore");
+user_pref("startup.homepage_override_url", "about:blank");
+user_pref("startup.homepage_welcome_url", "about:blank");
+user_pref("startup.homepage_welcome_url.additional", "");
+user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
+user_pref("browser.uitour.enabled", false);
+user_pref("browser.uitour.url", "");
+
+
+
+// --------------------------------
+// # SEARCH AND URLBAR
+// --------------------------------
+
+// disable search suggestions
+user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.urlbar.quicksuggest.scenario", ""); // disable firefox suggests and hide its UI
+
+user_pref("browser.search.region", "US"); // set a default search region for all users
+user_pref("browser.search.update", false); // do not update open search search engines
+user_pref("browser.urlbar.trimURLs", false); // do not trim urls in the urlbar
+
+// urlbar-dns interactions, avoid unwanted and speculative connections
+user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);
+user_pref("browser.urlbar.speculativeConnect.enabled", false);
+user_pref("browser.fixup.alternate.enabled", false);

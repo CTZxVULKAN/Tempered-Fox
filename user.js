@@ -200,8 +200,8 @@ user_pref("media.getusermedia.screensharing.enabled",	false);
 user_pref("media.getusermedia.audiocapture.enabled",	false);
 
 // disable speech recognition and sysnthesis
-user_pref("media.webspeech.recognition.enable",			false);
-user_pref("media.webspeech.synth.enabled",			false);
+user_pref("media.webspeech.recognition.enable",	false);
+user_pref("media.webspeech.synth.enabled", false);
 
 // disable face detection
 use_pref("camera.control.face_detection.enabled", false);
@@ -222,7 +222,7 @@ user_pref("media.gmp-manager.url", "data:text/plain,"); // prevent outgoing conn
 // disable the openh264 plugin
 user_pref("media.gmp-provider.enabled", false);
 user_pref("media.gmp-gmpopenh264.enabled", false);
-user_pref("media.gmp-manager.url",	""); // disable auto download of OpenH264 codec
+user_pref("media.gmp-manager.url", ""); // disable auto download of OpenH264 codec
 
 user_pref("media.gmp-widevinecdm.enabled", false); // prevent auto download of google's content decryption module.
 
@@ -244,8 +244,8 @@ user_pref("privacy.resistFingerprinting.letterboxing", true); // allow letterbox
 user_pref("media.video_stats.enabled", false); // disable media stats to prevent fingerprinting
 
 // dont reveal build id
-user_pref("general.buildID.override",				"20100101");
-user_pref("browser.startup.homepage_override.buildID",		"20100101");
+user_pref("general.buildID.override",	"20100101");
+user_pref("browser.startup.homepage_override.buildID", "20100101");
 
 // Disable webgl
 user_pref("webgl.disabled",	true);

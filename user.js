@@ -421,3 +421,12 @@ user_pref("browser.urlbar.autocomplete.enabled",		false);
 
 user_pref("browser.urlbar.suggest.quicksuggest", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
+
+// disable adressbar to suggest bookmarks history open tabs etc.
+user_pref("browser.urlbar.suggest.bookmark", false);
+user_pref("browser.urlbar.suggest.engines", false);
+user_pref("browser.urlbar.suggest.history", false);
+user_pref("browser.urlbar.suggest.openpage", false);
+user_pref("browser.urlbar.suggest.openpage",false);
+user_pref("browser.urlbar.suggest.searches",false);
+user_pref("browser.urlbar.suggest.topsites",false);

@@ -303,11 +303,11 @@ user_pref("browser.newtab.preload", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites",	false);
-
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks",	false);
 
 
 // hide pocket and sponsored content, from new tab page and search bar
+user_pref("extensions.pocket.enabled",false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket",	false);
 user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.section.highlights.includePocket",	false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories",	false);

@@ -291,3 +291,81 @@ user_pref("network.jar.open-unsafe-types", false); // Disable JAR from opening U
 user_pref("security.xpconnect.plugin.unrestricted",	false); // Disable Scripting of Plugins by JS
 user_pref("browser.urlbar.filter.javascript",	true); //  Disable Displaying Javascript in History URLs
 user_pref("security.fileuri.strict_origin_policy", true); // Set File URI Origin Policy
+
+
+
+
+// ------------------------------------
+// # NEW TAB PAGE
+// ------------------------------------
+
+user_pref("browser.newtab.preload", false);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", false);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites",	false);
+
+// hide pocket and sponsored content, from new tab page and search bar
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories",	false);
+user_pref("browser.newtabpage.activity-stream.feeds.system.topstories",	false);
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories.options", "{\"hidden\":true}"); // hide buggy pocket section from about:preferences#home
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
+user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.snippets", false); // default
+
+// disable recommend as you browse
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
+
+
+
+
+// ----------------------------------
+// # BROWSER BEHAVIOR
+// ----------------------------------
+
+user_pref("app.update.auto", false); // disable update auto installs
+
+// password manager
+user_pref("signon.rememberSignons", false); // disable saving passwords in the browser
+user_pref("signon.autofillForms", false); // disable username and password autofills
+user_pref("signon.formlessCapture.enabled", false); // disable formless login capture
+
+// autofill
+user_pref("extensions.formautofill.available", "off");
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.creditCards.enabled", false);
+user_pref("extensions.formautofill.creditCards.available", false);
+user_pref("extensions.formautofill.heuristics.enabled", false);
+
+// mouse and input
+user_pref("general.autoScroll", false); // prevent mouse middle click from triggering scrolling
+user_pref("middlemouse.contentLoadURL", false); // prevent mouse middle click from opening links
+user_pref("clipboard.autocopy", false); // disable autocopy to clibpboard
+
+// containers
+user_pref("privacy.userContext.enabled", true); // enable containers
+user_pref("privacy.userContext.ui.enabled", true);  // enable containers ui
+
+user_pref("pdfjs.enableScripting", false); // block pdf js scripting
+
+user_pref("accessibility.force_disabled", 1); // block accessibility services
+
+// devtools
+user_pref("devtools.chrome.enabled", false); // disable chrome debugging tools
+user_pref("devtools.debugger.remote-enabled", false); // default, disable remote debugging
+user_pref("devtools.remote.adb.extensionURL", ""); // url to download ad extension
+user_pref("devtools.selfxss.count", 0); // see https://gitlab.com/librewolf-community/browser/linux/-/issues/80
+
+// misc
+user_pref("browser.shell.checkDefaultBrowser", false); // do not check if default browser
+user_pref("browser.tabs.drawInTitlebar", true); // hide titlebar
+user_pref("browser.aboutConfig.showWarning", false); // disable about:config warning
+user_pref("browser.download.autohideButton", false); // hide download button automatically
+user_pref("browser.download.manager.addToRecentDocs", false); // do not add downloads to recents
+user_pref("browser.tabs.loadBookmarksInTabs", true); // always open bookmarks in new tab
+

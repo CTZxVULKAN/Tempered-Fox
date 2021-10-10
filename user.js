@@ -401,8 +401,8 @@ user_pref("browser.uitour.url", "");
 // --------------------------------
 
 // disable search suggestions
-user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.quicksuggest.scenario", ""); // disable firefox suggests and hide its UI
 
 user_pref("browser.search.region", "US"); // set a default search region for all users
@@ -413,3 +413,10 @@ user_pref("browser.urlbar.trimURLs", false); // do not trim urls in the urlbar
 user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);
 user_pref("browser.urlbar.speculativeConnect.enabled", false);
 user_pref("browser.fixup.alternate.enabled", false);
+
+user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0); // disable location bar leaking single words to a DNS provider
+
+//  disable location bar contextual suggestions
+user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
+user_pref("browser.urlbar.suggest.quicksuggest", false);
+user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);

@@ -35,7 +35,7 @@ user_pref("privacy.clearOnShutdown.siteSettings", false);
 
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 
-user_pref("privacy.sanitize.timeSpan",				0);  // Set time range to "Everything" as default in "Clear Recent History"
+user_pref("privacy.sanitize.timeSpan", 0);  // Set time range to "Everything" as default in "Clear Recent History"
 
 
 // -------------------------------------------
@@ -179,3 +179,49 @@ user_pref("browser.helperApps.deleteTempFileOnExit", true); // delete temporary 
 user_pref("browser.pagethumbnails.capturing_disabled", true); // disable page thumbnails capturing
 
 
+
+// ----------------------
+//   SECTION : MEDIA
+// ----------------------
+
+
+// disable webrtc
+use_pref("media.peerconnection.enabled", false); // master switch
+
+// limit potential IP leaks for webrtc users
+user_pref("media.peerconnection.ice.default_address_only", true); // use public IP for ICE candidates
+user_pref("media.peerconnection.ice.no_host", true); // don't use local IP for ICE candidates
+user_pref("media.peerconnection.ice.proxy_only_if_behind_proxy", true); // force webrtc inside proxy for proxy users
+
+// prevent capture of local camera and microphone streams
+user_pref("media.navigator.enabled",	false);
+user_pref("media.navigator.video.enabled",	false);
+user_pref("media.getusermedia.screensharing.enabled",	false);
+user_pref("media.getusermedia.audiocapture.enabled",	false);
+
+// disable speech recognition and sysnthesis
+user_pref("media.webspeech.recognition.enable",			false);
+user_pref("media.webspeech.synth.enabled",			false);
+
+// disable face detection
+use_pref("camera.control.face_detection.enabled", false);
+
+// autoplay
+user_pref("media.autoplay.blocking_policy", 2); // only allow to play when a certain element is clicked
+user_pref("media.autoplay.default", 5); // personal preference, currently apply blocking policy to all autplay including muted
+
+
+
+// -----------------------
+//    SECTION : DRM
+// -----------------------
+
+user_pref("media.eme.enabled", false); // disable drm content, master switch that also controls widevine plugin
+user_pref("media.gmp-manager.url", "data:text/plain,"); // prevent outgoing connections when DRM is disabled
+
+// disable the openh264 plugin
+user_pref("media.gmp-provider.enabled", false);
+user_pref("media.gmp-gmpopenh264.enabled", false);
+user_pref("media.gmp-manager.url",	""); // disable auto download of OpenH264 codec
+
+user_pref("media.gmp-widevinecdm.enabled", false); // prevent auto download of google's content decryption module.

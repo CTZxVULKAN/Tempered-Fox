@@ -290,6 +290,9 @@ user_pref("security.mixed_content.block_display_content",	true);
 // Enable First Party Isolation
 user_pref("privacy.firstparty.isolate",				true);
 
+// Enable Do not track
+user_pref("privacy.donottrackheader.enabled", true);
+
 user_pref("network.jar.open-unsafe-types", false); // Disable JAR from opening Unsafe File Types
 user_pref("security.xpconnect.plugin.unrestricted",	false); // Disable Scripting of Plugins by JS
 user_pref("browser.urlbar.filter.javascript",	true); //  Disable Displaying Javascript in History URLs

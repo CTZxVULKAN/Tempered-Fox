@@ -304,7 +304,12 @@ user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownload
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites",	false);
 
+user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks",	false);
+
+
 // hide pocket and sponsored content, from new tab page and search bar
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket",	false);
+user_pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.section.highlights.includePocket",	false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories",	false);
 user_pref("browser.newtabpage.activity-stream.feeds.system.topstories",	false);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);

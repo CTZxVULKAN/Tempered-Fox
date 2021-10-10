@@ -79,16 +79,6 @@ user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("browser.send_pings", false);
 user_pref("browser.send_pings.require_same_host",true);
 
-// Optimise SSL
-user_pref("security.ssl.require_safe_negotiation",true);
-
-// TLS
-user_pref("security.tls.version.min", 3);
-user_pref("security.ssl.enable_false_start",false);
-
-// Improve forward secrecy
-user_pref("security.tls.enable_0rtt_data" false);
-
 // Prevent network information leakage via javascript 
 user_pref("dom.netinfo.enabled",false);
 user_pref("network.allow-experiments",false);
@@ -254,3 +244,50 @@ user_pref("webgl.min_capability_mode", true); // When webGL is enabled, use the 
 user_pref("webgl.disable-extensions",	true); // When webGL is enabled, disable webGL extensions
 user_pref("webgl.disable-fail-if-major-performance-caveat",	true); //  When webGL is enabled, force enabling it even when layer acceleration is not supported
 user_pref("webgl.enable-debug-renderer-info",	false); // When webGL is enabled, do not expose information about the graphics driver
+
+
+
+
+// --------------------------------
+// # SECURITY
+// --------------------------------
+
+// certificates
+use_pref("security.cert_pinning.enforcement_level", 2); // enable strict public key pinning
+use_pref("security.pki.sha1_enforcement_level", 1); // disable sha-1 certificates
+use_pref("security.OCSP.enabled", 0); // disable OCSP fetching
+
+// safe negotiation
+use_pref("security.ssl.require_safe_negotiation", true); // block websites that do not support safe negotiation, occasional breakage
+use_pref("security.ssl.treat_unsafe_negotiation_as_broken",	true); // show warning when safe negotiation is not enable and website is accessed
+user_pref("security.tls.enable_0rtt_data" false); // improve forward secrecy
+
+// tls behavior
+user_pref("security.tls.version.min", 3); // use tls v3 and up
+user_pref("security.ssl.enable_false_start",false);
+use_pref("security.tls.enable_0rtt_data", false); // disable 0 round trip time to improve tls 1.3 security
+use_pref("security.tls.version.enable-deprecated", false); // default but helps resetting the preference
+use_pref("browser.ssl_override_behavior", 1); // prepopulate url on ssl warning screens
+use_pref("browser.xul.error_pages.expert_bad_cert", true); // advanced ui infos for broken connections
+
+// permissions
+use_pref("permissions.delegation.enabled", false); // force permission request to show the real origin
+use_pref("permissions.manager.defaultsUrl", ""); // revoke special permissions from some mozilla domains
+
+use_pref("gfx.font_rendering.opentype_svg.enabled", false); // disale svg opentype fonts
+
+use_pref("browser.download.useDownloadDir", false); // force user interaction on downloads, by always asking location
+
+use_pref("security.csp.enable", true); // default
+
+// Enforce Mixed Active Content Blocking
+user_pref("security.mixed_content.block_active_content",	true);
+user_pref("security.mixed_content.block_display_content",	true);
+
+// Enable First Party Isolation
+user_pref("privacy.firstparty.isolate",				true);
+
+user_pref("network.jar.open-unsafe-types", false); // Disable JAR from opening Unsafe File Types
+user_pref("security.xpconnect.plugin.unrestricted",	false); // Disable Scripting of Plugins by JS
+user_pref("browser.urlbar.filter.javascript",	true); //  Disable Displaying Javascript in History URLs
+user_pref("security.fileuri.strict_origin_policy", true); // Set File URI Origin Policy

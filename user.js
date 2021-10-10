@@ -417,6 +417,7 @@ user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0); // disable location bar leaking single words to a DNS provider
 
 //  disable location bar contextual suggestions
-user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
+user_pref("browser.urlbar.autocomplete.enabled",		false);
+
 user_pref("browser.urlbar.suggest.quicksuggest", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);

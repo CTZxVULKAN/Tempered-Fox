@@ -12,6 +12,9 @@ user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("network.cookie.thirdparty.sessionOnly", true);
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true);
 
+//  disable storing extra session data
+user_pref("browser.sessionstore.privacy_level", 2); 
+
 // Increase time between session saves
 user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("browser.sessionstore.interval", 60000); 

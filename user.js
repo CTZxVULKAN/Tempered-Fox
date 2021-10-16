@@ -316,7 +316,7 @@ user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmark
 user_pref("browser.startup.page", 0);
 
 // blank newtabs
-user_pref("browser.newtabpage.enabled", false)
+user_pref("browser.newtabpage.enabled", false);
 
 // hide pocket and sponsored content, from new tab page and search bar
 user_pref("extensions.pocket.enabled",false);

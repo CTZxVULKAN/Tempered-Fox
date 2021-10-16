@@ -410,6 +410,7 @@ user_pref("browser.uitour.url", "");
 // --------------------------------
 
 // disable search suggestions
+user_pref("browser.urlbar.autoFill", false)
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.quicksuggest.scenario", ""); // disable firefox suggests and hide its UI

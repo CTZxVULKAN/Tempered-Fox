@@ -592,8 +592,8 @@ user_pref("toolkit.coverage.opt-out", true); // [HIDDEN PREF]
 user_pref("toolkit.coverage.enabled", false);
 user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("toolkit.crashreporter.infoURL", "");
-user_pref("datareporting.healthreport.uploadEnabled", false);
-user_pref("datareporting.policy.dataSubmissionEnabled", false);
+
+
 user_pref("security.protectionspopup.recordEventTelemetry", false);
 user_pref("browser.ping-centre.telemetry", false);
 

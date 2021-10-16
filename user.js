@@ -436,3 +436,56 @@ user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.openpage",false);
 user_pref("browser.urlbar.suggest.searches",false);
 user_pref("browser.urlbar.suggest.topsites",false);
+
+
+
+// ---------------------------------
+// # SAFE BROWSING
+// ---------------------------------
+
+// disable safe browsing, including the fetch of updates and all outgoing connections 
+user_pref("browser.safebrowsing.malware.enabled", false);
+user_pref("browser.safebrowsing.phishing.enabled", false);
+user_pref("browser.safebrowsing.blockedURIs.enabled", false);
+user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
+user_pref("browser.safebrowsing.provider.google4.updateURL", "");
+user_pref("browser.safebrowsing.provider.google.gethashURL", "");
+user_pref("browser.safebrowsing.provider.google.updateURL", "");
+
+// disable safe browsing checks on downloads, both local and remote
+user_pref("browser.safebrowsing.downloads.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.url", "");
+user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
+user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
+
+// other safe browsing options, all default but enforce
+user_pref("browser.safebrowsing.passwords.enabled", false);
+user_pref("browser.safebrowsing.provider.google4.dataSharing.enabled", false);
+user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
+
+
+
+// ---------------------------------------------
+// # LOCATION, LANGUAGE AND REGION
+// ---------------------------------------------
+
+user_pref("geo.enabled", false); // block geo api, behind a prompt so review
+user_pref("permissions.default.geo", 2); // review as well
+
+// use mozilla geo service as deault
+user_pref("geo.provider.network.url", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
+
+// prevent use of OS location services
+user_pref("geo.provider.ms-windows-location", false); // [WINDOWS]
+user_pref("geo.provider.use_corelocation", false); // [MAC]
+user_pref("geo.provider.use_gpsd", false); // [LINUX]
+
+// show language as en-US for all users, regardless of their OS language and local version, to avoid leaking
+user_pref("javascript.use_us_english_locale", true);
+user_pref("intl.locale.requested", "en-US");
+user_pref("privacy.spoof_english", 2);
+
+// disable region updates
+user_pref("browser.region.network.url", "");
+user_pref("browser.region.update.enabled", false);

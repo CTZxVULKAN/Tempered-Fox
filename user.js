@@ -348,9 +348,17 @@ user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", fa
 user_pref("app.update.auto", false); // disable update auto installs
 
 // password manager
-user_pref("signon.rememberSignons", false); // disable saving passwords in the browser
 user_pref("signon.autofillForms", false); // disable username and password autofills
 user_pref("signon.formlessCapture.enabled", false); // disable formless login capture
+
+// just ask wether to save passwords
+user_pref("signon.rememberSignons", true); // disable will not allowing saving passwords in the browser
+user_pref("signon.generation.enabled", false); // dont generate any password
+
+user_pref("signon.management.page.breach-alerts.enabled" false); // dont cross check dbs to identify breached passwords
+user_pref("signon.management.page.breachAlertUrl", ""); 
+
+
 
 // autofill
 user_pref("extensions.formautofill.available", "off");

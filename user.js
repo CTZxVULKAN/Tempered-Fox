@@ -312,6 +312,9 @@ user_pref("browser.newtabpage.activity-stream.feeds.topsites",	false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks",	false);
 
 
+// blank newtabs
+user_pref("browser.startup.page", 0);
+
 // hide pocket and sponsored content, from new tab page and search bar
 user_pref("extensions.pocket.enabled",false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket",	false);

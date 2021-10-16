@@ -489,3 +489,36 @@ user_pref("privacy.spoof_english", 2);
 // disable region updates
 user_pref("browser.region.network.url", "");
 user_pref("browser.region.update.enabled", false);
+
+
+// -----------------------------------
+// # TRACKING PROTECTION
+// -----------------------------------
+
+user_pref("browser.contentblocking.category", "custom"); // set tracking protection category, using pref solves the UI bug
+
+// enable / disable TP in normal and private browsing
+user_pref("privacy.trackingprotection.enabled", false);
+user_pref("privacy.trackingprotection.pbmode.enabled", false);
+
+user_pref("privacy.trackingprotection.annotate_channels", false); // reduce priority of trackers, remove if TP is on
+
+// remove urls to fetch contentblocking lists.
+// without these urls TP cannot work. the lists are not shipped with the browser but download on first launch.
+user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
+user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
+
+// disable blocking lists and hide ui elements in custom mode UI, if TP is enabled revert to true
+user_pref("privacy.trackingprotection.cryptomining.enabled", false);
+user_pref("privacy.trackingprotection.fingerprinting.enabled", false);
+user_pref("browser.contentblocking.cryptomining.preferences.ui.enabled", false);
+user_pref("browser.contentblocking.fingerprinting.preferences.ui.enabled", false);
+
+// hide annoying ui elements from about:protections
+user_pref("browser.contentblocking.report.lockwise.enabled", false);
+user_pref("browser.contentblocking.report.monitor.enabled", false);
+user_pref("browser.contentblocking.report.hide_vpn_banner", true);
+user_pref("browser.contentblocking.report.vpn.enabled", false);
+user_pref("browser.contentblocking.report.show_mobile_app", false);
+
+

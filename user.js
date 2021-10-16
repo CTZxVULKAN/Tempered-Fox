@@ -252,7 +252,7 @@ user_pref("webgl.enable-debug-renderer-info",	false); // When webGL is enabled, 
 
 
 // --------------------------------
-// # SECURITY
+//  SECTION : SECURITY
 // --------------------------------
 
 // certificates
@@ -302,7 +302,7 @@ user_pref("security.fileuri.strict_origin_policy", true); // Set File URI Origin
 
 
 // ------------------------------------
-// # NEW TAB PAGE
+//  SECTION : NEW TAB PAGE
 // ------------------------------------
 
 user_pref("browser.newtab.preload", false);
@@ -336,7 +336,7 @@ user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", fa
 
 
 // ----------------------------------
-// # BROWSER BEHAVIOR
+//  SECTION : BROWSER BEHAVIOR
 // ----------------------------------
 
 user_pref("app.update.auto", false); // disable update auto installs
@@ -403,7 +403,7 @@ user_pref("browser.uitour.url", "");
 
 
 // --------------------------------
-// # SEARCH AND URLBAR
+// SECTION : SEARCH AND URLBAR
 // --------------------------------
 
 // disable search suggestions
@@ -440,7 +440,7 @@ user_pref("browser.urlbar.suggest.topsites",false);
 
 
 // ---------------------------------
-// # SAFE BROWSING
+//  SECTION : SAFE BROWSING
 // ---------------------------------
 
 // disable safe browsing, including the fetch of updates and all outgoing connections 
@@ -467,7 +467,7 @@ user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
 
 
 // ---------------------------------------------
-// # LOCATION, LANGUAGE AND REGION
+//  SECTION : LOCATION, LANGUAGE AND REGION
 // ---------------------------------------------
 
 user_pref("geo.enabled", false); // block geo api, behind a prompt so review
@@ -492,7 +492,7 @@ user_pref("browser.region.update.enabled", false);
 
 
 // -----------------------------------
-// # TRACKING PROTECTION
+//  SECTION : TRACKING PROTECTION
 // -----------------------------------
 
 user_pref("browser.contentblocking.category", "custom"); // set tracking protection category, using pref solves the UI bug
@@ -520,5 +520,51 @@ user_pref("browser.contentblocking.report.monitor.enabled", false);
 user_pref("browser.contentblocking.report.hide_vpn_banner", true);
 user_pref("browser.contentblocking.report.vpn.enabled", false);
 user_pref("browser.contentblocking.report.show_mobile_app", false);
+
+
+
+// --------------------------------------
+// # EXTENSIONS
+// --------------------------------------
+
+/**
+ allow extensions to work on all domains.
+ default is "debug-notes.log"
+ */
+ user_pref("extensions.webextensions.restrictedDomains", "");
+
+ // set extensions scopes
+ user_pref("extensions.enabledScopes", 5);
+ user_pref("extensions.autoDisableScopes", 11);
+ 
+ user_pref("extensions.postDownloadThirdPartyPrompt", false); // force install prompt for thrid party extensions 
+ 
+ /**
+  prevent users from adding lang packs, which would cause leaks.
+  default is https://services.addons.mozilla.org/api/v3/addons/language-tools/?app=firefox&type=language&appversion=%VERSION%
+ */ 
+ user_pref("extensions.getAddons.langpacks.url", "");
+ 
+ // about:addons ui
+ user_pref("extensions.getAddons.showPane", false); // disable recommendations section
+ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false); // disable recommendations from addons list
+ user_pref("lightweightThemes.getMoreURL", ""); // disable button to get more themes
+ 
+ // background checking and updating of extensions
+ user_pref("extensions.update.enabled", false); // disable automatic checks for extension updates
+ user_pref("extensions.update.autoUpdateDefault", false); // disable automatic installs of extension updates
+ user_pref("extensions.getAddons.cache.enabled", false); // disable fetching of extension metadata
+ 
+ // extension firewall, disabled by default
+ // user_pref("extensions.webextensions.base-content-security-policy", "default-src 'none'; script-src 'none'; object-src 'none';");
+ // user_pref("extensions.webextensions.base-content-security-policy.v3", "default-src 'none'; script-src 'none'; object-src 'none';");
+ 
+ // report site issue, disable button and url for in depth defense
+ lockPref("extensions.webcompat-reporter.enabled", false);
+ lockPref("extensions.webcompat-reporter.newIssueEndpoint", "");
+ 
+ // system addons, prevent updates and strip url for in depth defense
+ user_pref("extensions.systemAddon.update.enabled", false);
+ user_pref("extensions.systemAddon.update.url", "");
 
 

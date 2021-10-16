@@ -573,6 +573,17 @@ user_pref("browser.contentblocking.report.show_mobile_app", false);
 
 
 
+// --------------------------------
+//  SECTION : PERMISSIONS
+// --------------------------------
+
+// block new requests to acess camera mic geolocation notifications and vr devices
+user_pref("permissions.default.camera", 2);
+user_pref("permissions.default.microphone", 2);
+user_pref("permissions.default.desktop-notification", 2);
+user_pref("permissions.default.geo", 2);
+user_pref("permissions.default.xr", 2);
+
 
 // --------------------------------
 //  SECTION : TELEMETRY

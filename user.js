@@ -560,11 +560,69 @@ user_pref("browser.contentblocking.report.show_mobile_app", false);
  // user_pref("extensions.webextensions.base-content-security-policy.v3", "default-src 'none'; script-src 'none'; object-src 'none';");
  
  // report site issue, disable button and url for in depth defense
- lockPref("extensions.webcompat-reporter.enabled", false);
- lockPref("extensions.webcompat-reporter.newIssueEndpoint", "");
+ user_pref("extensions.webcompat-reporter.enabled", false);
+ user_pref("extensions.webcompat-reporter.newIssueEndpoint", "");
  
  // system addons, prevent updates and strip url for in depth defense
  user_pref("extensions.systemAddon.update.enabled", false);
  user_pref("extensions.systemAddon.update.url", "");
 
+
+
+
+// --------------------------------
+//  SECTION : TELEMETRY
+// --------------------------------
+
+user_pref("toolkit.telemetry.unified", false); // master switch
+user_pref("toolkit.telemetry.enabled", false);  // master switch
+user_pref("toolkit.telemetry.server", "data:,");
+user_pref("toolkit.telemetry.archive.enabled", false);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabledFirstSession", false); // default
+user_pref("toolkit.telemetry.bhrPing.enabled", false);
+user_pref("toolkit.telemetry.reportingpolicy.firstRun", false); // default
+user_pref("toolkit.telemetry.cachedClientID", "");
+user_pref("toolkit.telemetry.previousBuildID", "");
+user_pref("toolkit.telemetry.server_owner", "");
+user_pref("toolkit.coverage.opt-out", true); // [HIDDEN PREF]
+user_pref("toolkit.coverage.enabled", false);
+user_pref("toolkit.coverage.endpoint.base", "");
+user_pref("toolkit.crashreporter.infoURL", "");
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("security.protectionspopup.recordEventTelemetry", false);
+user_pref("browser.ping-centre.telemetry", false);
+
+// crash report
+user_pref("breakpad.reportURL", "");
+user_pref("browser.tabs.crashReporting.sendReport", false);
+
+// health reports
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("datareporting.healthreport.service.enabled", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
+
+// normandy and studies
+user_pref("app.normandy.enabled", false);
+user_pref("app.normandy.api_url", "");
+user_pref("app.shield.optoutstudies.enabled", false);
+
+// personalized extension recommendations
+user_pref("browser.discovery.enabled", false);
+user_pref("browser.discovery.containers.enabled", false);
+user_pref("browser.discovery.sites", "");
+
+// connectivity checks
+user_pref("network.connectivity-service.enabled", false);
+
+// captive portal
+user_pref("network.captive-portal-service.enabled", false);
+user_pref("captivedetect.canonicalURL", "");
+
+// prevent sending server side analytics
+user_pref("beacon.enabled", false);
 

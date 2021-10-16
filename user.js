@@ -355,8 +355,8 @@ user_pref("signon.formlessCapture.enabled", false); // disable formless login ca
 user_pref("signon.rememberSignons", true); // disable will not allowing saving passwords in the browser
 user_pref("signon.generation.enabled", false); // dont generate any password
 
-user_pref("signon.management.page.breach-alerts.enabled" false); // dont cross check dbs to identify breached passwords
-user_pref("signon.management.page.breachAlertUrl", ""); 
+user_pref("signon.management.page.breach-alerts.enabled", false); // dont cross check dbs to identify breached passwords
+user_pref("signon.management.page.breachAlertUrl", "");  // default url 	https://monitor.firefox.com/breach-details/
 
 
 

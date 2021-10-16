@@ -311,6 +311,9 @@ user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited"
 user_pref("browser.newtabpage.activity-stream.feeds.topsites",	false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks",	false);
 
+// blank new tab page
+
+user_pref(" browser.newtab.url", "about:blank");
 
 // hide pocket and sponsored content, from new tab page and search bar
 user_pref("extensions.pocket.enabled",false);

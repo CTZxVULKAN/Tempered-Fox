@@ -30,10 +30,10 @@ user_pref("privacy.clearOnShutdown.downloads", true);
 user_pref("privacy.clearOnShutdown.formdata", true);
 user_pref("privacy.clearOnShutdown.history", true);
 user_pref("privacy.clearOnShutdown.offlineApps", true);
+user_pref("privacy.clearOnShutdown.sessions", true);
+user_pref("privacy.clearOnShutdown.openWindows", true);
 
 user_pref("privacy.clearOnShutdown.passwords", false);
-user_pref("privacy.clearOnShutdown.sessions", false);
-user_pref("privacy.clearOnShutdown.openWindows", false);
 user_pref("privacy.clearOnShutdown.siteSettings", false);
 
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);

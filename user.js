@@ -498,7 +498,7 @@ user_pref("browser.region.update.enabled", false);
 //  SECTION : TRACKING PROTECTION
 // -----------------------------------
 
-user_pref("browser.contentblocking.category", "custom"); // set tracking protection category, using pref solves the UI bug
+user_pref("browser.contentblocking.category", "strict"); // set tracking protection cto strict mode
 
 // enable / disable TP in normal and private browsing
 user_pref("privacy.trackingprotection.enabled", false);

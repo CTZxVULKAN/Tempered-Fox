@@ -390,9 +390,10 @@ user_pref("devtools.selfxss.count", 0); // see https://gitlab.com/librewolf-comm
 user_pref("browser.shell.checkDefaultBrowser", false); // do not check if default browser
 user_pref("browser.tabs.drawInTitlebar", false); // hide titlebar
 user_pref("browser.aboutConfig.showWarning", false); // disable about:config warning
-user_pref("browser.download.autohideButton", false); // hide download button automatically
+user_pref("browser.download.autohideButton", true); // hide download button automatically
 user_pref("browser.download.manager.addToRecentDocs", false); // do not add downloads to recents
-user_pref("browser.tabs.loadBookmarksInTabs", true); // always open bookmarks in new tab
+// user_pref("browser.tabs.loadBookmarksInTabs", true); // always open bookmarks in new tab
+user_pref("layout.spellcheckDefault", 0); // disable spellcheck
 
 // remove default handlers and translation engine
 user_pref("gecko.handlerService.schemes.mailto.0.uriTemplate", "");

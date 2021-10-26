@@ -388,7 +388,7 @@ user_pref("devtools.selfxss.count", 0); // see https://gitlab.com/librewolf-comm
 
 // misc
 user_pref("browser.shell.checkDefaultBrowser", false); // do not check if default browser
-user_pref("browser.tabs.drawInTitlebar", true); // hide titlebar
+user_pref("browser.tabs.drawInTitlebar", false); // hide titlebar
 user_pref("browser.aboutConfig.showWarning", false); // disable about:config warning
 user_pref("browser.download.autohideButton", false); // hide download button automatically
 user_pref("browser.download.manager.addToRecentDocs", false); // do not add downloads to recents
